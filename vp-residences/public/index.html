@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vadivel Pattammal Residences — Where Luxury Meets Home</title>
+  <meta name="description" content="Premium luxury apartments in Thiruvaur. Refined architecture, curated amenities, and a sense of belonging converge." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%233b6fe0'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='14' font-weight='600'>VP</text></svg>" />
+</head>
+<body>
+
+<!-- GRID BACKGROUND -->
+<div class="grid-bg"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-badge">VP</div>
+    <div class="logo-text">
+      <h2>Vadivel Pattammal</h2>
+      <span>Premium Residences</span>
+    </div>
+  </a>
+
+  <div class="nav-actions" id="navActions">
+    <a href="gallery.html" class="btn-ghost" style="color:var(--white-60); font-size:14px;">Gallery</a>
+    <button class="btn-nav-book" onclick="openModal()">
+      Book a Visit <span class="arrow">→</span>
+    </button>
+  </div>
+
+  <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMobileMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="#" onclick="openModal(); closeMobileMenu();">Book a Visit</a>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-badge">Now Accepting Reservations</div>
+
+    <h1 class="hero-title">
+      <span class="line1">Where Luxury</span>
+      <span class="line2">Meets Home</span>
+    </h1>
+
+   
+
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="openModal()">
+        Reserve Your Home <span class="arrow">→</span>
+      </button>
+      <a href="gallery.html" class="btn-ghost">
+        View Gallery <span class="icon">↓</span>
+      </a>
+    </div>
+
+   
+    
+  </div>
+
+
+
+  <div class="hero-right">
+    <div class="building-card">
+      <img
+        class="building-img"
+        src="images/building.jpeg"
+        alt="Vadivel Pattammal Residences Building"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'750\' viewBox=\'0 0 600 750\'%3E%3Crect width=\'600\' height=\'750\' fill=\'%230c1525\'/%3E%3Crect x=\'100\' y=\'200\' width=\'400\' height=\'450\' fill=\'%23162040\' rx=\'4\'/%3E%3Crect x=\'140\' y=\'240\' width=\'80\' height=\'80\' fill=\'%231e3060\' rx=\'2\'/%3E%3Crect x=\'260\' y=\'240\' width=\'80\' height=\'80\' fill=\'%231e3060\' rx=\'2\'/%3E%3Crect x=\'380\' y=\'240\' width=\'80\' height=\'80\' fill=\'%231e3060\' rx=\'2\'/%3E%3Crect x=\'140\' y=\'360\' width=\'80\' height=\'80\' fill=\'%231e3060\' rx=\'2\'/%3E%3Crect x=\'260\' y=\'360\' width=\'80\' height=\'80\' fill=\'%231e3060\' rx=\'2\'/%3E%3Crect x=\'380\' y=\'360\' width=\'80\' height=\'80\' fill=\'%231e3060\' rx=\'2\'/%3E%3Crect x=\'230\' y=\'520\' width=\'140\' height=\'130\' fill=\'%23c9a84c\' rx=\'2\'/%3E%3Ctext x=\'300\' y=\'160\' text-anchor=\'middle\' fill=\'%23c9a84c\' font-family=\'Georgia\' font-size=\'16\' font-style=\'italic\'%3EVadivel Pattammal Residences%3C/text%3E%3C/svg%3E'"
+      />
+      <div class="building-overlay"></div>
+
+      <div class="badge-now-open">Now Open</div>
+
+      <div class="badge-location">
+        <div class="loc-icon">🏙️</div>
+        <div class="loc-text">
+          <h4>Prime Location</h4>
+          <span>Thiruvaur</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- FEATURES ROW -->
+<div class="features-row">
+  <div class="feature-item">
+    <div class="feature-icon blue">🏛️</div>
+    <div class="feature-text">
+      <h3>Modern Architecture</h3>
+      
+    </div>
+  </div>
+  <div class="feature-item">
+    <div class="feature-icon gold">📍</div>
+    <div class="feature-text">
+      <h3>Prime Location</h3>
+      
+    </div>
+  </div>
+  <div class="feature-item">
+    <div class="feature-icon green">🎯</div>
+    <div class="feature-text">
+      <h3>Premium Service</h3>
+    
+    </div>
+  </div>
+  <div class="feature-item">
+    <div class="feature-icon purple">🔒</div>
+    <div class="feature-text">
+      <h3>Secure Living</h3>
+      
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="section-about reveal" id="about">
+  <div class="about-left">
+    <div class="section-tag">About the Project</div>
+    <h2 class="section-heading">Built for <em>Comfortable Living</em></h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-card-num">Peaceful</div>
+        <div class="about-card-label">Living</div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-num">Quality</div>
+        <div class="about-card-label">Service</div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-num">5★</div>
+        <div class="about-card-label">Quality Construction</div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-num">2026</div>
+        <div class="about-card-label">Ready to Move</div>
+      </div>
+    </div>
+  </div>
+  <div class="about-image-wrap">
+    <img
+      src="images/building.jpeg"
+      alt="Vadivel Pattammal Residences exterior"
+      onerror="this.style.background='linear-gradient(135deg,#0c1525,#162040)'; this.alt=''; this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'"
+    />
+    <div class="about-image-badge">
+      <p>Established</p>
+      <strong>Est. 2025</strong>
+    </div>
+  </div>
+</section>
+
+<!-- UNITS SECTION -->
+<section class="section-units" id="units">
+  <div class="section-header reveal">
+    <div class="section-tag">Available Units</div>
+    <h2 class="section-heading">Choose Your <em>Perfect Home</em></h2>
+  </div>
+
+  <div class="units-grid">
+    <!-- Unit 1 -->
+    <div class="unit-card">
+      <div class="unit-img-wrap">
+        <img
+          src="images/building6.jpeg"
+          alt="1 BHK Unit"
+          onerror="this.parentElement.style.background='linear-gradient(135deg,#0c1525,#1a2a4a)'; this.style.display='none';"
+        />
+        <div class="unit-tag">1 BHK</div>
+      </div>
+      <div class="unit-body">
+        <h3>Compact Luxury Suite</h3>
+        <p>Elegantly designed single-bedroom residence with premium finishes and abundant natural light.</p>
+        <div class="unit-features">
+          <div class="unit-feat"><span>🛏️</span> 1 Bed</div>
+          <div class="unit-feat"><span>🚿</span> 1 Bath</div>
+        </div>
+        <div class="unit-footer">
+          <div class="unit-price">₹6500 <small>onwards</small></div>
+          <button class="btn-enquire" onclick="openModal()">Enquire Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Unit 2 -->
+    <div class="unit-card">
+      <div class="unit-img-wrap">
+        <img
+          src="images/building7.jpeg"
+          alt="2 BHK Unit"
+          onerror="this.parentElement.style.background='linear-gradient(135deg,#101a30,#1e3060)'; this.style.display='none';"
+        />
+        <div class="unit-tag" style="background:#3b6fe0;">2 BHK</div>
+      </div>
+      <div class="unit-body">
+        <h3>Premium Family Residence</h3>
+        <p>Spacious two-bedroom apartment designed for families who appreciate the finer things in life.</p>
+        <div class="unit-features">
+          <div class="unit-feat"><span>🛏️</span> 2 Beds</div>
+          <div class="unit-feat"><span>🚿</span> 2 Baths</div>
+        </div>
+        <div class="unit-footer">
+          <div class="unit-price">₹12500 <small>onwards</small></div>
+          <button class="btn-enquire" onclick="openModal()">Enquire Now</button>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+
+
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<div class="section-cta reveal">
+  <h2 class="cta-title">Ready to Find Your <em>Dream Home?</em></h2>
+  <div class="cta-actions">
+    <button class="btn-cta-primary" onclick="openModal()">Book a Visit Today</button>
+    <a href="gallery.html" class="btn-cta-ghost">View Gallery</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">
+    <div class="nav-logo">
+      <div class="logo-badge">VP</div>
+      <div class="logo-text">
+        <h2>Vadivel Pattammal</h2>
+        <span>Premium Residences</span>
+      </div>
+    </div>
+    <p>Vadivel Pattammal — Where comfort meets quality living.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Navigate</h4>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Units</h4>
+    <ul>
+      <li><a href="#units">1 BHK</a></li>
+      <li><a href="#units">2 BHK</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Contact</h4>
+    <ul>
+      <li><a href="tel:+916385554182">+91 6385554182</a></li>
+      <li><a href="mailto:ajram4028@gmail.com">ajram4028@gmail.com</a></li>
+      <li><a href="#">Thiruvaur, Tamil Nadu</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>© 2025 Vadivel Pattammal Residences. All rights reserved.</p>
+  <p>Crafted with ❤️ in <span class="gold">Thiruvaur</span></p>
+</div>
+
+<!-- BOOKING MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+
+    <div id="modalForm">
+      <div class="modal-header">
+        <div class="modal-tag">Book a Visit</div>
+        <h2 class="modal-title">Reserve Your <em>Home Today</em></h2>
+      </div>
+
+     
+
+     
+
+        <div class="form-group" id="fg-unit">
+          
+            
+          </select>
+        </div>
+      </div>
+<div class="contact-buttons">
+  
+  <!-- WhatsApp -->
+  <a href="https://wa.me/916385554182?text=Hi%20I%20am%20interested%20in%20booking%20an%20apartment"
+     target="_blank"
+     class="btn-whatsapp">
+
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+    </svg>
+
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- Call -->
+  <a href="tel:+916385554182" class="btn-call">
+
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </svg>
+
+    <span>Call Now</span>
+  </a>
+
+</div>
+      <div class="form-group">
+     
+      
+      </div>
+
+     
+      
+        <span class="spinner"></span>
+      </button>
+    </div>
+
+    <div class="modal-success" id="modalSuccess">
+      <div class="success-icon">✓</div>
+      <h3 class="success-title">Reservation Confirmed!</h3>
+      <p class="success-desc">
+        Thank you for your interest in Vadivel Pattammal Residences.<br />
+        Our team will call you within 24 hours to finalize your visit.
+      </p>
+      <button class="btn-submit" style="margin-top:24px;" onclick="closeModal()">
+        <span class="btn-text">Close</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
